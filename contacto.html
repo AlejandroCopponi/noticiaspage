@@ -32,8 +32,74 @@
 
         <section class="principal">
             <div class="contacto">
-                <h2>Mail: mail@mail.com</h2>
-                <h2>Teléfono 011 4525475</h2>
+                <h2>Envianos tus datos y tu mensaje</h2>
+                <form action="mailto:mail@mail.com" method="post" id="formcontacto" target="new">
+                    <div>
+                        <label >
+                            <h3>Nombre</h3>
+                            <input type="text" name="nombre" required autofocus>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <h3>Apellido</h3>
+                            <input type="text" name="apellido" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <h3>Email</h3>
+                            <input type="email" name="mail" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <h3>Teléfono</h3>
+                            <input type="text" name="tel" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label >
+                            <h3>Provincia</h3>
+                            <select name="provincia" id="">
+                                <option value="13">Seleccione una provincia</option>
+                                <option value="1">Santa Fe</option>
+                                <option value="2">Buenos Aires</option>
+                                <option value="3">Entre Rios</option>
+                                <option value="4">Salta</option>
+                                <option value="5">Catamarca</option>
+                                <option value="6">Corrientes</option>
+                                <option value="7">Jujuy</option>
+                                <option value="8">Tucumán</option>
+                                <option value="9">La Rioja</option>
+                                <option value="10">Nauquén</option>
+                                <option value="11">Chubut</option>
+                                <option value="12">Río Negro</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <h3>Código Postal</h3>
+                            <input type="text" name="cp" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <h3>Mensaje</h3>
+                            <textarea name="mensaje" id="" cols="30" rows="30" placeholder="Escriba su mensaje" required></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="suscripcion" value="1" checked>
+                            <span>Suscribirme a las novedades</span>
+                        </label>
+                    </div>
+
+                    <input type="submit" value="Enviar">
+            
+                </form>
                 
             </div>
         </section>
